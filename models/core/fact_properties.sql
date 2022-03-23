@@ -1,14 +1,12 @@
 {{ config(materialized='table') }}
 
 with sell_data as (
-    select *, 
-        'Green' as service_type 
+    select *
     from {{ ref('stg_sell_properti_data') }}
 ), 
 
 rent_data as (
-    select *, 
-        'Yellow' as service_type
+    select *
     from {{ ref('stg_rent_properti_data') }}
 ), 
 
