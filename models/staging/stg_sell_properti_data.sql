@@ -5,7 +5,7 @@ with propertidata as
   select *,
     row_number() over(partition by id, created_on) as rn
   from {{ source('staging','sell_data_partitioned') }}
-  where id is not null 
+  -- where id is not null 
 )
 select
     -- identifiers
@@ -34,7 +34,7 @@ select
     cast(price_usd_per_m2 as numeric) as price_per_m2_in_usd,
     cast(price_per_m2 as numeric) as price_per_m2_in_brl
 from propertidata
-where rn = 1
+-- where rn = 1
 
 
 -- dbt build --m <model.sql> --var 'is_test_run: false'
