@@ -17,7 +17,7 @@ properti_unioned as (
 )
 select 
     properti_unioned.propertiid,
-    -- properti_unioned.id,
+    properti_unioned.id,
     properti_unioned.operation,
     properti_unioned.property_type,
     properti_unioned.place_name,

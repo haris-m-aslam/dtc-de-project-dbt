@@ -10,7 +10,7 @@ with propertidata as
 select
     -- identifiers
     {{ dbt_utils.surrogate_key(['id', 'created_on']) }} as propertiid,
-    cast(id as integer) as id,    
+    cast(id as string) as id,
     cast(title as string) as title,
     cast(operation as string) as operation,
     cast(property_type as string) as property_type,
