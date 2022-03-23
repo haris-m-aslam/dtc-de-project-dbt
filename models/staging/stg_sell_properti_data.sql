@@ -32,9 +32,7 @@ select
     cast(price_aprox_local_currency as numeric) as price_approx_in_brl,
     cast(price_aprox_usd as numeric) as price_approx_in_usd,
     cast(price_usd_per_m2 as numeric) as price_per_m2_in_usd,
-    cast(price_per_m2 as numeric) as price_per_m2_in_brl,
-    
- 
+    cast(price_per_m2 as numeric) as price_per_m2_in_brl
 from propertidata
 where rn = 1
 
