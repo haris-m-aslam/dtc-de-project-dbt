@@ -17,13 +17,11 @@ properti_unioned as (
 )
 select 
     properti_unioned.propertiid,
-    properti_unioned.id,
+    -- properti_unioned.id,
     properti_unioned.operation,
     properti_unioned.property_type,
     properti_unioned.place_name,
     properti_unioned.state_name,
-    --pickup_zone.borough as pickup_borough,
-    --pickup_zone.zone as pickup_zone,
     properti_unioned.created_on,
     properti_unioned.surface_total,
     properti_unioned.surface_covered,
