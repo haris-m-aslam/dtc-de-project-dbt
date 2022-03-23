@@ -14,8 +14,8 @@ select
     cast(title as string) as title,
     cast(operation as string) as operation,
     cast(property_type as string) as property_type,
-    cast(place_name as string) as place,
-    cast(state_name as string) as state,
+    cast(place_name as string) as place_name,
+    cast(state_name as string) as state_name,
     
     -- timestamps
     cast(created_on as date) as created_on,
@@ -27,7 +27,7 @@ select
     cast(rooms as integer) as rooms,
     
     -- payment info
-    cast(price as numeric) as price
+    cast(price as numeric) as price,
     cast(currency as string) as currency,
     cast(price_aprox_local_currency as numeric) as price_approx_in_brl,
     cast(price_aprox_usd as numeric) as price_approx_in_usd,

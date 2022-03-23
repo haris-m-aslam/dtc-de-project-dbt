@@ -13,10 +13,6 @@ sources:
       # loaded_at_field: record_loaded_at
       tables:
         - name: sell_data_partitioned
-        # - name: yellow_tripdata_external_table
-        # - name: fhv_tripdata_external_table
-         # freshness:
-           # error_after: {count: 6, period: hour}
 
 models:
     - name: stg_sell_properti_data
