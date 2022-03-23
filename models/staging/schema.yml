@@ -13,8 +13,12 @@ sources:
       # loaded_at_field: record_loaded_at
       tables:
         - name: sell_data_partitioned
+        - name: rent_data_partitioned
 
 models:
     - name: stg_sell_properti_data
       description: >
         Properti sold data
+    - name: stg_rent_properti_data
+      description: >
+        Properti rent data
